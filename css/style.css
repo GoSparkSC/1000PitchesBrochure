@@ -1,0 +1,140 @@
+/* Resets */
+/* ----------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+/* ----------------------------------------------------- */
+html, body {
+  height: 100%;
+	min-width: 1024px;
+}
+.section-full {
+  width: 100%;
+  margin: 0 auto;
+}
+.section-inner {
+  width: 1024px; height: 100%;
+  margin: 0 auto;
+}
+
+/* Site */
+/* ----------------------------------------------------- */
+.splash {
+  height: 100%;
+	min-height: 520px;
+  background: url("../img/splash.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: none;
+}
+.splash>.spacer {
+	width: 100%; height: 33%;
+	position: relative;
+}
+.splash>.banner {
+	width: 100%; height: 33%;
+	position: relative;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+}
+.splash>.banner>.spacer {
+	height: 14%;
+	position: relative;
+}
+.splash>.banner>.logo {
+	height: 72%;
+	position: relative;
+	display: inline-block;
+}
+.splash>.banner>.description {
+	height: 72%;
+	margin-left: 40px;
+	position: relative;
+	display: inline-block;
+}
+.splash>.action {
+	width: 100%;
+	margin-top: 40px;
+}
+.splash>.action>button {
+	width: 280px; height: 68px;
+	margin: 0 auto;
+	border: 2px solid #FCBE31;
+	border-radius: 10px;
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-size: 32px;
+	letter-spacing: 1px;
+	background: rgba(0,0,0,0.8); color: white;
+}
+.splash>.action>a {
+	width: 280px;
+	margin: 20px auto 0 auto;
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 24px;
+	letter-spacing: 3px;
+	color: #FCBE31;
+}
+.flyer {
+  height: auto;
+}
+.flyer>section {
+}
+.about {
+  height: auto;
+}
+.about>section {
+}
+.sponsors {
+  height: auto;
+}
+.sponsors>section {
+}
