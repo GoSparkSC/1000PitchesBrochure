@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <!-- Built by Stephen Chen -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="favicon.ico">
@@ -15,24 +16,66 @@
       <img src="img/description.svg" alt="1000 Pitches Description" class="description">
     </section>
     <section class="action">
-      <button>Go Pitch</button>
-      <a href="http://1000pitches.com/">What is 1KP?</a>
+      <a href="http://1000pitches.com/pitch" class="button">Go Pitch</a>
+      <a href="#whatis1KP" id="whatis1KP-scroll">What is 1KP?</a>
     </section>
   </section>
-  <section class="flyer section-full">
+  <section class="flyer section-full" id="whatis1KP">
     <section class="section-inner">
       <img src="img/infographic.svg" alt="1000 Pitches Infographic" class="infographic">
     </section>
   </section>
   <section class="about section-full">
     <section class="section-inner">
-      
+      <a href="http://1000pitches.com/content/faq" target="_blank" class="button">FAQ</a>
+      <a href="http://1000pitches.com/content/judging-rubric" target="_blank" class="button">Rubric</a>
+      <a href="http://1000pitches.com/content/rules-eligibility" target="_blank" class="button">Rules</a>
     </section>
   </section>
   <section class="sponsors section-full">
     <section class="section-inner">
-
+      <h2>Our Sponsors</h2>
+      <section class="sponsorlist">
+        <!-- <a href="http://usc.thelaunchpad.org" class="logo-blackstone"><img src="assets/sponsors/BL.jpg"></img></a> -->
+        <a href="http://www.20mm.org/" target="_blank"><img src="img/sponsors/20mm-04.png"></a>
+        <a href="http://arktos.io/#/" target="_blank"><img src="img/sponsors/arktos-04.png"></a>
+        <a href="http://www.cornerstoneondemand.com/" target="_blank" class="logo-cornerstone"><img src="img/sponsors/cornerstone-03.png"></a>
+        <a href="http://crosscamp.us" target="_blank"><img src="img/sponsors/crosscampus-02.png"></a>
+        <a href="http://www.flextronics.com/default.aspx" target="_blank"><img src="img/sponsors/FLEXTRONICS-03.png"></a>
+        <a href="https://generalassemb.ly/" target="_blank"><img src="img/sponsors/ga.png"></a>
+        <a href="http://www.goldhirshfoundation.org" target="_blank"><img src="img/sponsors/gh.png"></a>
+        <a href="http://klugeinteractive.com/" target="_blank"><img src="img/sponsors/lu.png"></a>
+        <a href="http://neurlabs.com/" target="_blank"><img src="img/sponsors/ns.png"></a>
+        <a href="http://openx.com/" target="_blank"><img src="img/sponsors/ox.png"></a>
+        <a href="http://roughdraft.vc/" target="_blank"><img src="img/sponsors/rd.png"></a>
+        <a href="http://www.salesforce.com/" target="_blank"><img src="img/sponsors/sf.png"></a>
+        <a href="http://www.tellapart.com/" target="_blank"><img src="img/sponsors/tp.png"></a>
+      </section>
     </section>
   </section>
+
+  <footer class="footer section-full">
+    <a href="http://sparksc.org/"><img src="img/footer.png" alt="Energized by Spark SC"></a>
+  </footer>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script>
+    $('#whatis1KP-scroll').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: $('#whatis1KP').offset().top}, 1000);
+    });
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48870049-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
