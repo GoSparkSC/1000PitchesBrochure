@@ -45,9 +45,17 @@ table {
 
 /* General */
 /* ----------------------------------------------------- */
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../font/Montserrat/Montserrat-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
 html, body {
   height: 100%;
 	min-width: 1024px;
+	font-family: 'Montserrat';
+	font-size: 16px;
 }
 .section-full {
   width: 100%;
@@ -97,18 +105,32 @@ html, body {
 	width: 100%;
 	margin-top: 40px;
 }
-.splash>.action>button {
+.button {
 	width: 280px; height: 68px;
-	margin: 0 auto;
+	margin: 0 20px;
 	border: 2px solid #FCBE31;
 	border-radius: 10px;
-	position: relative;
-	display: block;
+	display: inline-block;
+	text-decoration: none;
 	text-transform: uppercase;
-	font-family: "Montserrat";
-	font-size: 32px;
+	text-align: center;
+	font-size: 32px !important;
 	letter-spacing: 1px;
-	background: rgba(0,0,0,0.8); color: white;
+	line-height: 68px;
+	background: rgba(0,0,0,0.8); color: white !important;
+
+	-o-transition:.4s;
+	-ms-transition:.4s;
+	-moz-transition:.4s;
+	-webkit-transition:.4s;
+	transition:.4s;
+}
+.button:hover {
+	background: #FCBE31;
+}
+.splash>.action>.button {
+	margin: 0 auto;
+	position: relative;
 }
 .splash>.action>a {
 	width: 280px;
@@ -118,23 +140,44 @@ html, body {
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
-	font-family: "Montserrat";
 	font-size: 24px;
 	letter-spacing: 3px;
 	color: #FCBE31;
 }
 .flyer {
+	padding: 40px 0;
   height: auto;
 }
 .flyer>section {
 }
 .about {
+	padding: 80px 0;
   height: auto;
 }
 .about>section {
+	text-align: center;
 }
 .sponsors {
+	padding: 80px 0;
   height: auto;
+	background: #FCBE31;
 }
 .sponsors>section {
+	text-align: center;
+}
+.sponsors>section>h2 {
+	padding-bottom: 40px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+.sponsors>section>.sponsorlist>a>img {
+	height: 120px;
+}
+.footer {
+	text-align: center;
+	background: #222;
+}
+.footer>a>img {
+	width: 320px;
 }
