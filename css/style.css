@@ -173,6 +173,10 @@ html, body {
 }
 .sponsors>section>.sponsorlist>a>img {
 	height: 120px;
+	vertical-align: middle;
+}
+.logo-blackstone>img {
+	height: 80px !important;
 }
 .footer {
 	text-align: center;
