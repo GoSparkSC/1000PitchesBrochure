@@ -172,11 +172,30 @@ html, body {
 	font-size: 32px;
 }
 .sponsors>section>.sponsorlist>a>img {
-	height: 120px;
+	padding: 30px 20px;
+	height: 60px;
 	vertical-align: middle;
+
+	/* -webkit-filter: grayscale(80%);
+	-moz-filter: grayscale(80%);
+	filter: grayscale(80%);
+	transition: .4s;
+	transition-property: initial;
+	transition-duration: 0.4s;
+	transition-timing-function: initial;
+	transition-delay: initial; */
 }
-.logo-blackstone>img {
-	height: 80px !important;
+.sponsors>section>.sponsorlist>a.small>img {
+	height: 40px;
+}
+.sponsors>section>.sponsorlist>a.big>img {
+	height: 90px;
+}
+.sponsors>section>.sponsorlist>a>img:hover {
+
+	/* -webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	filter: grayscale(0); */
 }
 .footer {
 	text-align: center;
