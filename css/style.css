@@ -144,10 +144,11 @@ html, body {
 	color: #FCBE31;
 }
 .flyer {
-	padding: 40px 0;
+	padding: 60px 0 10px 0;
   height: auto;
 }
-.flyer>section {
+.flyer>section>img {
+	width: 100%;
 }
 .about {
 	padding: 80px 0;
